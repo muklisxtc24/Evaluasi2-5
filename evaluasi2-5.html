@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Evaluasiweh</title>
+  </head>
+  <body>
+    <script>
+      function arrayToObject(arr){ 
+
+        var date = new Date();
+        var data1 = date.getFullYear() - arr["1. bruce banner"][3];
+        var data2 = date.getFullYear() - arr["2. natasha romanoof"][3];
+
+        var people1 = {
+          firstName: arr["1. bruce"][0],
+          lastName: arr["1. banner"][1],
+          gender: arr["1. male"][2],
+          age: data1,
+        };
+
+        var people2 = {
+          firstName: arr["2. natasha"][0],
+          lastName: arr["2. romanoof"][1],
+          gender: arr["2. female"][2],
+          age: data2,
+        };
+
+        console.log("1. bruce banner : ", people1);
+        console.log("\n");
+        console.log("2. natasha romanoof: ", people2);
+        
+      }
+      var people = {
+        "1. bruce banner": ["bruce", "banner", "male", 1976],
+        "2. natasha romanoof": ["nastha", "romanoof", "female", 2021 ]
+      };
+    
+      arrayToObject(people);
+      
+    </script>
+  </body>
+</html>
